@@ -1,0 +1,7 @@
+- wildcard search for flash in all fields
+- when a new entry is added, display the entry ID, you may want to update immediately
+
+
+- hex,binary,decimal converter
+- DNS resolution
+- UDP craft,TCP

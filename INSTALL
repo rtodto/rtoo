@@ -1,0 +1,30 @@
+
+#Install python package manager
+apt-get -y install python-pip
+yum install python2-pip
+
+#Install cmd2
+pip install cmd2
+
+#Install netaddr package (used for network addressing)
+pip install netaddr
+
+#to format the outputs
+pip install tabulate
+
+#Needed for Ubuntu 14.04 above
+#Get mysql-connector-python-master from github https://github.com/mysql/mysql-connector-python (download the zip and install as below)
+python setup.py  install
+
+#Centos
+yum install mysql-connector-python
+
+
+#Mysql DB create
+CREATE USER rtooappusr@localhost IDENTIFIED BY 'mysecretpass';
+CREATE DATABASE rtooappdb;
+GRANT ALL PRIVILEGES ON rtooappdb.* to rtooappusr@localhost;
+
+
+#Cursor doc
+http://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor.html

@@ -1,0 +1,20 @@
+######################################
+#Description of the custom functions #
+######################################
+
+
+FLASH CARD APP
+==============
+
+flash_new_deck:
+  It adds a new flash deck table to MySQL database. User provides deck name 
+  and script adds the prefix "flash_" to distinguish it from other app tables.
+
+flash_deck_avail:
+  With this one, we check if a deck is already available or not. 
+
+flash_drop_deck: 
+  We are deleting the deck name provided on the CLI by adding "flash_" prefix.
+
+do_flash:
+  this is the primary command which presents flashcard options. 

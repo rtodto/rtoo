@@ -1,0 +1,26 @@
+
+flash cards:
+===========
+CREATE TABLE cardname (id int, front_entry varchar(255), back_entry varchar(255),sentence text, 
+                      num_of_display int, flash_note text, expr_level tinyint, next_display datetime, 
+                      last_display datetime, img_url varchar(255), local_image blob, insert_date int);
+
+<--expr_level takes 3 values
+1: very good
+2: good
+3: poor
+
+<--last_display 
+shows when was the card displayed last time
+
+<--next_display
+expected next display datetime
+
+<--img_url 
+keeps the url of the source pertaining to this content
+
+<--local_image
+we expect to keep some data locally too.
+
+<--insert_date
+the time we added the card in epoch
